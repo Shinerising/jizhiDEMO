@@ -1,0 +1,29 @@
+<header class="global">
+</header>
+<div id="header" class="lockonhead">
+<div class="container">
+  <nav role="navigation" class="navbar">
+    <ol class="navbar-left">
+      <ul class="nav navbar-menu">
+        <li *ngFor="let item of navitems"><a routerLink="{{ item.link }}" routerLinkActive="active" class="lightlink">{{ item.name }}</a></li>
+      </ul>
+    </ol>
+    <ol class="navbar-right">
+    </ol>
+  </nav>
+</div>
+</div>
+<div id="body">
+  <router-outlet #router></router-outlet>
+</div>
+<div id="footer" class="fade-in">
+  <div class="container">
+    <div class="poweredby">
+      <p>
+      <span>Powered by Angular</span>
+      </p>
+    </div>
+  </div>
+</div>
+<footer class="global fade-in">
+</footer>

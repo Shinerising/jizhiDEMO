@@ -1,0 +1,27 @@
+<div class="container main">
+  <div class="content main fade-in" *ngIf="content">
+    <div *ngIf="content.data.posts">
+      <section class="blog" *ngFor="let post of content.data.posts.results">
+        <article class="post">
+          <div *ngIf="post.image" class="img-cover">
+            <div>
+              <a routerLink="/blog/post/{{ post.slug }}"><img src="{{ post.image }}" class="cover"></a>
+            </div>
+          </div>
+          <h2><a routerLink="/blog/post/{{ post.slug }}">{{ post.title }}</a></h2>
+          <div class="meta">
+            <p>
+              <a routerLink="/user/{{ post.author.key }}" *ngIf="post.author"><span class="post-author">{{ post.author.nickname }}<i class="label-hover label-verified" *ngIf="post.author.verified"></i></span></a>
+              <span class="publishDate" *ngIf="post.publishedDate"><time>{{ post.publishedDate | datebefore }}</time></span> 发表至
+              <span class="category" *ngIf="post.category"><a routerLink="/blog/{{ post.category.link }}">{{ post.category.name }}</a></span>
+              <label *ngIf="post.topped" class="topped"><span>置顶</span></label>
+            </p>
+          </div>
+          <div class="description" *ngIf="post.content">
+            <p>{{ post.content.brief }}</p>
+          </div>
+        </article>
+      </section>
+    </div>
+  </div>
+</div>
