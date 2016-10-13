@@ -2,9 +2,11 @@
 originally from website http://jizhi.im
 
 ## Technology
-This demo is powered by Angular2.0 and written in Typescript. I provided some stylesheets to make it like a modern app. This demo only presents a small part of our website, more features will be added in the future.
+This demo is powered by [Angular2.0](https://angular.io/) and written in Typescript. I provided some stylesheets to make it like a modern app.
+
+It only presents a small part of our website, more features will be added in the future.
 
 ## Attention
 This demo could only be used for learning, you CANNOT copy, rewrite and publish for any business purposes, and any malicious behaviours like data stealing, website hacking are also forbidden. 
 
-You can visit http://plnkr.co/edit/i4DupODbcQMJ4hIPeRHy for live preview, and we will be glad to receive your suggestion and feedback.
+You can visit http://plnkr.co/edit/i4DupODbcQMJ4hIPeRHy for live preview, and we will be glad to receive your suggestions and feedbacks.
