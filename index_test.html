@@ -5,6 +5,15 @@
   <base href="." />
   <title>Jizhi Angular Demo</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/zone.js/dist/zone.js"></script>
+  <script src="https://unpkg.com/zone.js/dist/long-stack-trace-zone.js"></script>
+  <script src="https://unpkg.com/reflect-metadata@0.1.3/Reflect.js"></script>
+  <script src="https://unpkg.com/systemjs@0.19.31/dist/system.js"></script>
+  <script src="config.js"></script>
+  <script>
+    System.import('app')
+      .catch(console.error.bind(console));
+  </script>
 </head>
 
 <body>
@@ -38,9 +47,6 @@
     <footer class="global fade-in">
     </footer>
   </my-app>
-  <script type="text/javascript" src="dist/inline.93449797113a112afb67.bundle.js"></script>
-  <script type="text/javascript" src="dist/polyfills.c9b879328f3396b2bbe8.bundle.js"></script>
-  <script type="text/javascript" src="dist/main.17abac6aa75955ec615d.bundle.js"></script>
 </body>
 
 </html>
